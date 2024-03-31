@@ -2,9 +2,9 @@ import axios from "axios";
 
 const baseUrl = process.env.REACT_APP_API_MELI + "items"
 
-export const searchItems = async () => {
+export const searchItems = async (value) => {
     try {
-        const response = await axios.get(baseUrl);
+        const response = await axios.get(baseUrl + `?search=${value}`);
         return response
     } catch (error) {
         console.error(error);

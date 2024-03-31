@@ -6,13 +6,16 @@ export const Home = () => {
     return (
         <div>
             <SearchField />
-            <div className='row'>
-                <div className='col-1'></div>
-                <div className='col-10'>
-                    <Outlet />
+            <div className='container' >
+                <div className='row'>
+                    <div className='col-1'></div>
+                    <div className='col-10'>
+                        <Outlet />
+                    </div>
+                    <div className='col-1'></div>
                 </div>
-                <div className='col-1'></div>
             </div>
+
         </div>
     )
 }

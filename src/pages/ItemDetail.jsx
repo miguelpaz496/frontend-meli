@@ -9,6 +9,7 @@ export const ItemDetail = () => {
     
     const { id } = useParams();
     const [item, setItem] = useState({});
+    const [links, setLinks] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -17,19 +18,43 @@ export const ItemDetail = () => {
         }
 
         fetchData().catch(console.error);;
-    }, [])
+    }, [id])
+
+    useEffect(() => {
+
+        if(item){
+            let list = [
+                {
+                    title : item.category,
+                    to: ``
+                },
+                {
+                    title : item.title,
+                    to: `item/${item.id}`
+                }
+    
+            ]
+    
+            setLinks(list)
+        }
+
+    }, [item])
 
     return (
         <div>
-            <Breadcrumb/>
-            <div className='paper'>
-                {
-                    item && item.title ? 
-                    <Details data={item}/>
-                    : 
-                    <div>no encontrado</div>
-                }
-            </div>
+            {
+                item && item && item.title &&
+                <div>
+                    <Breadcrumb data={links} />
+                    <div className='paper'>
+                        {
+                            <Details data={item}/>
+                        }
+                    </div>
+                </div>
+
+            }
+
         </div>
 
     )

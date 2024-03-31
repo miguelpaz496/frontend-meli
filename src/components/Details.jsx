@@ -10,7 +10,7 @@ export const Details = ({data}) => {
                     <img className='details-image' src={data.picture} alt={data.title} />
                 </div >
                 <div className='details-image-box info col-4'>
-                    <p className='details-condition'>{data.condition} - {data.sold_quantity} vendidos</p>
+                    <p className='details-condition'>{data.condition === "new" ? "Nuevo" : "Usado" } - {data.sold_quantity} vendidos</p>
                     <p className='details-title'>{data.title}</p>
                     <div className='row details-price-box'>
                         <p className='details-price'>$ {priceFormat(data.price.amount)} </p>
