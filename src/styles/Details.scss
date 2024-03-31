@@ -1,0 +1,75 @@
+@use 'App';
+
+.details-image {
+    width: 680px;
+    height: 680px;
+    min-width: 680px;
+    min-height: 680px;
+}
+
+.details-image-box {
+    padding-bottom: 16px;
+}
+
+.info {
+    padding-top: 32px;
+}
+
+.details-condition {
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+
+.details-title {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+.details-price-box {
+    padding: 16px 0;
+}
+
+.details-price {
+    font-size: 46px;
+}
+
+.details-price-decimals {
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+
+.description-box {
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+.description-title {
+    font-size: 28px;
+    padding-bottom: 16px;
+}
+
+.description-text {
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    color:  App.$color-placeholder;
+}
+
+.btn-box {
+    margin-top: 16px;
+    margin-right: 32px;
+}
+
+.btn-comprar {
+    background-color: App.$blue-bnt;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+}

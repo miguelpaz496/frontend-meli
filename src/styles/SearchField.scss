@@ -1,0 +1,70 @@
+@use 'App';
+
+.center-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  background-color: App.$yellow-meli;
+}
+
+.search-box{
+  @extend .center-div;
+  height: 56px;
+}
+
+.group-field{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+
+.search-field{
+  font-size: 18px;
+  color: App.$color-text;
+  border: none;
+  padding-left: 12px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  width:95%;
+  height:80%;
+}
+
+.search-field::placeholder {
+  color: App.$color-placeholder;
+  opacity: 1;
+  border: none;
+
+}
+
+.search-field::-ms-input-placeholder {
+  color: App.$color-placeholder;
+  border: none;
+
+}
+
+.search-field:focus {
+  outline: none;
+  
+}
+
+.btn-search{
+  border: none;
+  background-color: App.$color-backgroud;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width:5%;
+  height:80%;
+  min-width: 35px;
+  max-width: 55px;
+}
+  
+.meli-icon {
+  margin-right: 25px;
+  outline: none;
+}
+

@@ -1,0 +1,6 @@
+@use 'App';
+
+.breadcrumb{
+    margin: 16px 0;
+    color: App.$color-placeholder
+}
