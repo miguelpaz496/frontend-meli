@@ -16,3 +16,7 @@ Agregar un archivo .env en donde se van añadir la url del backend de este proye
 Por último, usar el siguiente comando para levantar la aplicación 
 
 `npm run start`
+
+### Vistas
+
+![Home](https://github.com/miguelpaz496/frontend-meli/assets/62910450/ec7c53f0-b540-4ada-a4c0-7292fd7d8c57)
